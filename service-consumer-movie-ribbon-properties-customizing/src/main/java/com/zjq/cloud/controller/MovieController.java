@@ -23,6 +23,9 @@ public class MovieController {
 	public User findById(@PathVariable Long id) {
 		//http://localhost:7900/simple/
 		//VIP virturl ip //虚拟ip
+		ServiceInstance choose = loadBalancerClient.choose("service-provider-user");
+		System.out.println("==111:" + ":" + choose.getServiceId() + ":" + choose.getHost() + ":" + choose.getPort());
+		
 		return this.restTemplate.getForObject("http://service-provider-user/simple/" + id, User.class);
 	}
 	

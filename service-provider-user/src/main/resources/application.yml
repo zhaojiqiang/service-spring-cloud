@@ -1,5 +1,5 @@
 server:
-  port: 7900
+  port: 7902
 spring:
   jpa:
     generate-ddl: false
@@ -11,7 +11,7 @@ spring:
     schema: classpath:schema.sql
     data: classpath:data.sql
   application:
-    name: service-provider-user
+    name: service-provider-user2
 logging:
   level:
     root: INFO

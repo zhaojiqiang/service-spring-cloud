@@ -13,6 +13,7 @@
 		<module>service-consumer-movie</module>
 		<module>service-provider-user</module>
 		<module>service-discovery-eureka</module>
+		<module>service-consumer-movie-ribbon-properties-customizing</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
