@@ -14,6 +14,9 @@
 		<module>service-provider-user</module>
 		<module>service-discovery-eureka</module>
 		<module>service-consumer-movie-ribbon-properties-customizing</module>
+		<module>service-consumer-movie-ribbon-without-eureka</module>
+		<module>service-consumer-movie-feign</module>
+		<module>service-consumer-movie-feign-customizing</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

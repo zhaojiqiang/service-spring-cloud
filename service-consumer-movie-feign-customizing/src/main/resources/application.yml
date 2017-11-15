@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: service-consumer-movie
+server:
+  port: 7901
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password@localhost:8761/eureka
+  instance:
+    ip-address: true
+logging:
+  level: 
+    com.zjq.cloud.UserFeignClient: DEBUG
+ 
+#解决timeout      hystrix timeout默认1秒
+# 方法1 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000 设置timeout 5s
+# 方法2 hystrix.command.default.execution.timeout.enabled: false 禁用 timeout 
+# 方法3 feign.hystrix.enabled: false    禁用 hystrix
